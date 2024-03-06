@@ -9,4 +9,3 @@ sudo apt install docker.io
 sudo systemctl enable docker
 
 docker --version
-
