@@ -4,13 +4,13 @@ sudo apt update
 
 sudo apt install git bc
 
-cd /home/james
+cd ~
 
 rm -r rtl8852be_bt
 
 git clone https://github.com/HRex39/rtl8852be_bt.git
 
-cd /home/james/rtl8852be_bt
+cd /root/rtl8852be_bt
 
 make
 
