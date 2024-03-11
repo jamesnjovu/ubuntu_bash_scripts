@@ -10,7 +10,7 @@ rm -rf rtl8852be
 
 git clone https://github.com/HRex39/rtl8852be.git
 
-cd /root/rtl8852be
+cd rtl8852be
 
 make
 
