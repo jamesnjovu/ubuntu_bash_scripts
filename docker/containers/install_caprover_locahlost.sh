@@ -11,6 +11,6 @@ ufw allow 80,443,3000,996,7946,4789,2377/tcp
 
 ufw enable
 
-sudo docker run -p 80:80 -p 443:443 -p 3000:3000 -e ACCEPTED_TERMS=true -v /var/run/docker.sock:/var/run/docker.sock -v /captain:/captain caprover/caprover
+sudo docker run -p 80:80 -p 443:443 -p 3000:3000 -e ACCEPTED_TERMS=true -e MAIN_NODE_IP_ADDRESS=127.0.0.1 -v /var/run/docker.sock:/var/run/docker.sock -v /captain:/captain caprover/caprover
 
 # default_password=captain42
