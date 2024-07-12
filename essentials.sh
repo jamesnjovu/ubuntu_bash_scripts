@@ -5,6 +5,8 @@ if [[ $EUID -ne 0 ]]; then
   exit 1
 fi
 
+sudo add-apt-repository universe
+
 sudo apt update -y
 
 sudo apt autoremove
