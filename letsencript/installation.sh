@@ -5,6 +5,8 @@ sudo ufw allow 443
 
 echo ufw status
 
-sudo apt install letsencrypt
+sudo apt update
+
+sudo apt install certbot letsencrypt
 
 sudo systemctl status certbot.timer
