@@ -22,5 +22,6 @@ sudo apt-get install nodejs -y
 
 echo "Installing Done"
 
-echo node -v
-echo npm -v
+node -v
+
+npm -v
