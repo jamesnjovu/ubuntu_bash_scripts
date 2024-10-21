@@ -108,8 +108,3 @@ This script installs a specific version of Elixir using `asdf`. It checks for th
 ---
 ## License
 This project is licensed under the MIT License.
-
----
-Feel free to update the instructions based on your own environment and use cases.
-
-Let me know if you need any other modifications!
