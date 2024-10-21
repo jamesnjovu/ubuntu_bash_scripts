@@ -1,0 +1,2 @@
+https://prathapreddy-mudium.medium.com/vboxuser-is-not-in-the-sudoers-file-this-incident-will-be-reported-enable-sudo-in-ubuntu-resolved-305e7988c6bc
+
