@@ -16,7 +16,13 @@ FORTICLIENT_PATH="$HOME/forticlientsslvpn/64bit"
 # VPN Credentials
 VPN_HOST="localhost:10443"  # Updated to your VPN host
 VPN_USER="j.njovu"
-VPN_PASS="PASSWORD"
+VPN_PASS=""
+
+# Prompt for VPN password
+if [[ -z "$VPN_PASS" ]]; then
+  read -sp "Enter VPN password: " VPN_PASS
+  echo
+fi
 
 # Check if the FortiClient binary exists
 if [[ ! -f "$FORTICLIENT_PATH/forticlientsslvpn_cli" ]]; then
