@@ -1,27 +1,20 @@
-#! /bin/bash
+#!/bin/bash
 
-if [[ $EUID -ne 0 ]]; then
-  echo "This script must be run as root"
-  exit 1
-fi
+# Update the package index
+sudo apt update
 
-NODE_V="20.x"
+# Install curl if it's not already installed
+sudo apt install -y curl
 
-cd ~
+# Fetch the setup script for the latest version of Node.js (LTS)
+curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
 
-echo "Getting node version $NODE_V"
+# Install Node.js
+sudo apt install -y nodejs
 
-curl -sL https://deb.nodesource.com/setup_$NODE_V -o /tmp/nodesource_setup.sh
-sudo bash /tmp/nodesource_setup.sh
+# Optionally, install build tools
+sudo apt install -y build-essential
 
-echo "Installing node version $NODE_V"
-
-apt-get install nodejs -y
-
-sudo apt-get install nodejs -y
-
-echo "Installing Done"
-
+# Verify the installation
 node -v
-
 npm -v
