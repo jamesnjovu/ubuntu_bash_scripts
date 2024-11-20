@@ -18,7 +18,7 @@ if [ -d "$USER_HOME/.asdf" ]; then
 else
     # Clone the asdf repository
     echo "Cloning asdf repository..."
-    git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.14.0
+    git clone https://github.com/asdf-vm/asdf.git $USER_HOME/.asdf --branch v0.14.0
 
     if [ $? -ne 0 ]; then
         echo "Error: Failed to clone asdf repository. Please check your connection and try again."
