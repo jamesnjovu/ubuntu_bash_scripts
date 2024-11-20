@@ -22,7 +22,9 @@ fi
 
 # Install required packages for building Erlang
 echo "Installing required build packages..."
-sudo apt-get -y install build-essential autoconf m4 libncurses5-dev libgl1-mesa-dev libglu1-mesa-dev libpng-dev libssh-dev unixodbc-dev xsltproc fop libxml2-utils libncurses-dev openjdk-11-jdk
+sudo apt-get update
+sudo apt-get -y install build-essential autoconf m4 libncurses5-dev libgl1-mesa-dev libglu1-mesa-dev \
+    libpng-dev libssh-dev unixodbc-dev xsltproc fop libxml2-utils libncurses-dev openjdk-11-jdk
 
 # Set KERL configure options to disable debugging and exclude javac
 export KERL_CONFIGURE_OPTIONS="--disable-debug --without-javac"
